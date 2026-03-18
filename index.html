@@ -14,11 +14,13 @@
         body {
             background: #000;
             color: #fff;
-            font-family: 'Courier', monospace;
+            font-family: 'Courier New', monospace;
             height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
+            gap: 1.5rem;
         }
 
         h1 {
@@ -27,9 +29,15 @@
             letter-spacing: 0.3em;
             text-transform: lowercase;
         }
+
+        video {
+            width: 200px;
+            display: block;
+        }
     </style>
 </head>
 <body>
     <h1>thin video</h1>
+    <video src="metro.mp4" autoplay loop muted playsinline></video>
 </body>
 </html>
